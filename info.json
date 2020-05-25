@@ -7,6 +7,7 @@
 	"description": "Adds steam train and ship sounds to the Honk mod.",
 	"factorio_version": "0.18",
     "dependencies": [
-      "Honk"
+      "? Honk",
+      "? robot256_Honk"
     ]
 }

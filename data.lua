@@ -39,11 +39,11 @@ data:extend({
 local ship_single = table.deepcopy(honk_single)
 ship_single.name = "honk-single-ship"
 ship_single.filename = "__MoreHonks__/sounds/honk-single-ship.ogg"
-ship_single.volume = ship_single.volume * 1.2
+ship_single.volume = ship_single.volume * 1.0
 local ship_double = table.deepcopy(honk_double)
 ship_double.name = "honk-double-ship"
 ship_double.filename = "__MoreHonks__/sounds/honk-double-ship.ogg"
-ship_double.volume = ship_double.volume * 1.2
+ship_double.volume = ship_double.volume * 1.0
 
 data:extend({
   ship_single,

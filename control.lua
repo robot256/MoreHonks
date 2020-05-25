@@ -20,27 +20,30 @@ local steam_locos = {
 }
 
 local function register_sounds()
-  -- Add steam trains with MU versions
-  for _,name in pairs(steam_locos) do
-    remote.call("Honk", "set_custom_honks", name, "honk-single-steam-train", "honk-double-steam-train")
-    remote.call("Honk", "set_custom_honks", name.."-mu", "honk-single-steam-train", "honk-double-steam-train")
+  if remote.interfaces["Honk"] then
+    -- Add steam trains with MU versions
+    for _,name in pairs(steam_locos) do
+      remote.call("Honk", "set_custom_honks", name, "honk-single-steam-train", "honk-double-steam-train")
+      remote.call("Honk", "set_custom_honks", name.."-mu", "honk-single-steam-train", "honk-double-steam-train")
+    end
+    
+    -- Add boat and cargo ship
+    remote.call("Honk", "set_custom_honks", "boat_engine", "honk-single-boat", "honk-double-boat")
+    remote.call("Honk", "set_custom_honks", "cargo_ship_engine", "honk-single-ship", "honk-double-ship")
+    
+    -- Disable default honks by setting them to "none"
+    local default_single = nil
+    local default_double = nil
+    if settings.global["more-honks-disable-default-single-honk"] then
+      default_single = "none"
+    end
+    if settings.global["more-honks-disable-default-double-honk"] then
+      default_double = "none"
+    end
+    remote.call("Honk", "set_custom_honks", "default", default_single, default_double)
+  else
+    game.print("More Honks Warning: No Honk mod found")
   end
-  
-  -- Add boat and cargo ship
-  remote.call("Honk", "set_custom_honks", "boat_engine", "honk-single-boat", "honk-double-boat")
-  remote.call("Honk", "set_custom_honks", "cargo_ship_engine", "honk-single-ship", "honk-double-ship")
-  
-  -- Disable default honks by setting them to "none"
-  local default_single = nil
-  local default_double = nil
-  if settings.global["more-honks-disable-default-single-honk"] then
-    default_single = "none"
-  end
-  if settings.global["more-honks-disable-default-double-honk"] then
-    default_double = "none"
-  end
-  remote.call("Honk", "set_custom_honks", "default", default_single, default_double)
-  
 end
 
 script.on_configuration_changed(register_sounds)
