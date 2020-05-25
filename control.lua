@@ -14,20 +14,16 @@ local steam_locos = {
   "SteamTrains-locomotive",
 }
 
-local boats = {
-  -- Cargo Ships (these are not trains at all, you cannot couple them!)
-  "boat_engine",
-  "cargo_ship_engine",
-}
-
 local function register_sounds()
+  -- Add steam trains with MU versions
   for _,name in pairs(steam_locos) do
     remote.call("Honk", "set_custom_honks", name, "honk-single-steam-train", "honk-double-steam-train")
     remote.call("Honk", "set_custom_honks", name.."-mu", "honk-single-steam-train", "honk-double-steam-train")
   end
-  for _,name in pairs(boats) do
-    remote.call("Honk", "set_custom_honks", name, "honk-single-ship", "honk-double-ship")
-  end
+  
+  -- Add boat and cargo ship
+  remote.call("Honk", "set_custom_honks", "boat_engine", "honk-single-boat", "honk-double-boat")
+  remote.call("Honk", "set_custom_honks", "cargo_ship_engine", "honk-single-ship", "honk-double-ship")
   
 end
 

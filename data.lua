@@ -15,3 +15,32 @@ data:extend({
   steam_single,
   steam_double,
 })
+
+
+-- Tugboat Honks
+local boat_single = table.deepcopy(honk_single)
+boat_single.name = "honk-single-boat"
+boat_single.filename = "__MoreHonks__/sounds/honk-single-boat.ogg"
+local boat_double = table.deepcopy(honk_double)
+boat_double.name = "honk-double-boat"
+boat_double.filename = "__MoreHonks__/sounds/honk-double-boat.ogg"
+
+data:extend({
+  boat_single,
+  boat_double,
+})
+
+
+-- Ship Honks
+local ship_single = table.deepcopy(honk_single)
+ship_single.name = "honk-single-ship"
+ship_single.filename = "__MoreHonks__/sounds/honk-single-ship.ogg"
+local ship_double = table.deepcopy(honk_double)
+ship_double.name = "honk-double-ship"
+ship_double.filename = "__MoreHonks__/sounds/honk-double-ship.ogg"
+
+data:extend({
+  ship_single,
+  ship_double,
+})
+
