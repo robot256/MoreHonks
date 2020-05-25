@@ -1,19 +1,14 @@
 ---------------------------------------------------------------------------------------------------
-Version: 0.1.1
-Date: 2020.05.25
-  Features:
-    - Added sounds for Cargo Ships mod Boat and Ship.
-    - honk-single-boat.ogg remixed from original by arnaud coutancier https://freesound.org/people/arnaud%20coutancier/sounds/417695/ (CC-BY-NC 3.0 https://creativecommons.org/licenses/by-nc/3.0/)
-    - honk-double-boat.ogg remixed from original by tim.kahn https://freesound.org/people/tim.kahn/sounds/265977/ (CC-BY-NC 3.0 https://creativecommons.org/licenses/by-nc/3.0/)
-    - honk-single-ship.ogg remixed from original by milo https://freesound.org/people/milo/sounds/23722/ (CC-BY 3.0 https://creativecommons.org/licenses/by/3.0/)
-    - honk-double-ship.ogg remixed from original by inchadney https://freesound.org/people/inchadney/sounds/135825/ (CC-BY 3.0 https://creativecommons.org/licenses/by/3.0/)
-    
----------------------------------------------------------------------------------------------------
 Version: 0.1.0
-Date: 2020.05.24
+Date: 2020.05.25
   Features:
     - Initial release
     - Added steam whistle sounds for Steam Locomotive mod and for the steam locomotives in the Yuoki Industries mods.
     - honk-single-steam-train.ogg remixed from original by Bidone https://freesound.org/people/Bidone/sounds/71778/ (CC0 Public Domain)
     - honk-double-steam-train.ogg remixed from original by boteman https://freesound.org/people/boteman/sounds/57196/ (CC-BY-NC 3.0 https://creativecommons.org/licenses/by-nc/3.0/)
-    
+    - Added sounds for Cargo Ships mod Boat and Ship.
+    - honk-single-boat.ogg remixed from original by arnaud coutancier https://freesound.org/people/arnaud%20coutancier/sounds/417695/ (CC-BY-NC 3.0 https://creativecommons.org/licenses/by-nc/3.0/)
+    - honk-double-boat.ogg remixed from original by tim.kahn https://freesound.org/people/tim.kahn/sounds/265977/ (CC-BY-NC 3.0 https://creativecommons.org/licenses/by-nc/3.0/)
+    - honk-single-ship.ogg remixed from original by milo https://freesound.org/people/milo/sounds/23722/ (CC-BY 3.0 https://creativecommons.org/licenses/by/3.0/)
+    - honk-double-ship.ogg remixed from original by inchadney https://freesound.org/people/inchadney/sounds/135825/ (CC-BY 3.0 https://creativecommons.org/licenses/by/3.0/)
+    - Added settings to disable default single and double honks. When enabled, only entities with custom-defined honks will play sounds. Re-add the default honks to specific entities using the names "honk-single" and "honk-double".

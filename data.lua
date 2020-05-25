@@ -1,4 +1,8 @@
-
+--[[ Copyright (c) 2020 robot256 (MIT License)
+ * Project: More Honks
+ * File: data.lua
+ * Description: Prototypes for new sounds
+--]]
 
 local honk_single = data.raw.sound["honk-single"]
 local honk_double = data.raw.sound["honk-double"]
@@ -35,9 +39,11 @@ data:extend({
 local ship_single = table.deepcopy(honk_single)
 ship_single.name = "honk-single-ship"
 ship_single.filename = "__MoreHonks__/sounds/honk-single-ship.ogg"
+ship_single.volume = ship_single.volume * 1.2
 local ship_double = table.deepcopy(honk_double)
 ship_double.name = "honk-double-ship"
 ship_double.filename = "__MoreHonks__/sounds/honk-double-ship.ogg"
+ship_double.volume = ship_double.volume * 1.2
 
 data:extend({
   ship_single,
