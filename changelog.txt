@@ -1,5 +1,5 @@
 ---------------------------------------------------------------------------------------------------
-Version: 0.1.1
+Version: 0.1.2
 Date: 2020.05.25
   Features:
     - Fix bug where default sounds would always be disabled.
