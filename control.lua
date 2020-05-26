@@ -34,10 +34,10 @@ local function register_sounds()
     -- Disable default honks by setting them to "none"
     local default_single = nil
     local default_double = nil
-    if settings.global["more-honks-disable-default-single-honk"] then
+    if settings.global["more-honks-disable-default-single-honk"].value then
       default_single = "none"
     end
-    if settings.global["more-honks-disable-default-double-honk"] then
+    if settings.global["more-honks-disable-default-double-honk"].value then
       default_double = "none"
     end
     remote.call("Honk", "set_custom_honks", "default", default_single, default_double)
