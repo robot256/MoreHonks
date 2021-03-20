@@ -1,11 +1,11 @@
 {
 	"name": "MoreHonks",
-	"version": "0.1.2",
+	"version": "0.2.1",
 	"title": "More Honks",
 	"author": "robot256",
 	"homepage": "",
 	"description": "Adds steam train and ship sounds to the Honk mod.",
-	"factorio_version": "0.18",
+	"factorio_version": "1.1",
     "dependencies": [
       "robot256_Honk"
     ]
